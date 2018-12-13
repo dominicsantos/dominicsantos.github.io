@@ -1,0 +1,47 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+double getAverage(double prelimGrade,double midtermGrade,double finalGrade)
+{
+    double Average;
+    Average=(prelimGrade+midtermGrade+finalGrade)/3;
+    return Average;
+}
+main ()
+{
+char name[10000];
+float cParticipation,aQuiz,mExam,Average,prelimGrade,midtermGrad,finalGrade;
+cout<<"Student Name :";
+cin>>name;
+{
+cout<<"Class Participation :";
+cin>>cParticipation;
+cout<<"Average Quiz :";
+cin>>aQuiz;
+cout<<"Major Exam :";
+cin>>mExam;
+prelimGrade=(cParticipation+aQuiz+mExam)/3;
+}
+{
+cout<<"Class Participation :";
+cin>>cParticipation;
+cout<<"Average Quiz :";
+cin>>aQuiz;
+cout<<"Major Exam :";
+cin>>mExam;
+midtermGrade=(cParticipation+aQuiz+mExam)/3;
+}
+{
+cout<<"Class Participation :";
+cin>>cParticipation;
+cout<<"Average Quiz :";
+cin>>aQuiz;
+cout<<"Major Exam :";
+cin>>mExam;
+finalGrade=(cParticipation+aQuiz+mExam)/3;
+}
+Average=(prelimGrade,midtermGrade,finalGrade)/3;
+cout<<"Your Average is :";<<Average;
+getch ();
+return 0;
+}
